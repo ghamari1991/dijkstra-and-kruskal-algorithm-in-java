@@ -133,18 +133,6 @@ public class WeightedGraph {
             System.out.println(  "("+edgs[i].v1+","+edgs[i].v2+") => W :"+edgs[i].weight);
         System.out.println(kruskal_mst(set, edgs, 6));
         
-        
-        /*
-        
-        for (i=0;i<m;i++)
-    cout«"("«edge[i].v1«","«edge[i].v2«") => W :"«edge[i].weight«"\n";
-
-  cout«"Weight Is : "«kruskal_mst(set,edge,n,m);
-  getch();
-}*/
-        
-        
-
         final int[] pred = Dijkstra.dijkstra(t, 0);
         for (int n = 0; n < 6; n++) {
             Dijkstra.printPath(t, pred, 0, n);
